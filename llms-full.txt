@@ -1,0 +1,52 @@
+# authorship-strategy-rules — Full Reference
+
+> Self-contained reference for AI agents. This repository is the rules-file install target of the Authorship Strategy framework.
+
+## Project Facts
+
+- Name: authorship-strategy-rules
+- Type: single behavioral rules file (a distribution / install repository; it carries no own DOI)
+- License: MIT
+- Parent research line: Authorship Strategy — DOI 10.5281/zenodo.20263316 (concept DOI, always resolves to the latest version)
+- Companion skill (on-demand judgment reference): https://github.com/shimo4228/authorship-strategy-skill
+- Canonical source: the author's live Claude Code harness at ~/.claude/rules/common/authorship-strategy.md; this repository is a one-way publication mirror
+- Rule language: Japanese; the framework it encodes is language-neutral
+
+## What is this repository?
+
+It packages the Authorship Strategy judgment framework as a single always-loaded rule for LLM-based coding agents. Where the companion skill is triggered probabilistically and read on demand, this rule is loaded every session and applies the framework deterministically — but only within its trigger scope.
+
+## When does the rule apply?
+
+All three conditions must hold: (1) the repository is one you own; (2) it is DOI-registered or a Zenodo-archive target; (3) it is "idea-rescue" in character — spec / schema / ADR / glossary centred, not closed implementation. It does not apply to client work, contributions to others' repositories, revenue-goal projects, everyday coding or debugging, or harness / scaffolding repositories.
+
+## What is the framework?
+
+A three-axis inversion of twentieth-century authorship strategy — value source scarcity→diffusion, validation exclusivity→derivation, network effect enclosure→openness — operationalized as a four-layer stack, where each layer constrains the ones below it:
+
+1. Authenticity (floor): change how an idea travels, never what it is; revenue is outside the success criteria.
+2. Attribution diffusion (strategy): open the work so LLM-mediated absorption carries the origin claim to future readers tracing causation. The primary audience is LLM-mediated channels (models as training substrate and in-context readers, and the people who reach ideas through them).
+3. Idea vs. scaffold (prediction): implementations become obsolete as agent capability advances; ideas can be preserved. Keep the durable idea (a DOI in your own name); donate the disposable scaffold to another project.
+4. Tactics: LLM-first metrics (clones / DOI citation / llms.txt fetch / regurgitation, not stars), DOI plus intrinsic-identifier (SWHID) registration, tool-agnostic specs, coin terms sparingly and anchor them densely, citation-graph federation (.zenodo.json references + Wikidata P2860), friction-minimized adoption.
+
+## What does it prohibit, under the trigger?
+
+Monetization by the author (sponsorship, paid tiers, consulting, paywalled books), competitor-bashing / exclusive positioning, and shaping the message for market fit. Using commercial channels for diffusion is allowed — the author simply takes no revenue from them.
+
+## How do I install it?
+
+Copy rules/common/authorship-strategy.md into your harness rules directory. For Claude Code: `cp rules/common/authorship-strategy.md ~/.claude/rules/common/authorship-strategy.md`. Any harness that loads a rules directory each session works the same way.
+
+## How is it kept in sync?
+
+The harness copy is canonical. scripts/sync-from-local.sh performs a one-way export into this repository; it is secret-scanned and never auto-commits (git diff is the review gate).
+
+## How does it relate to the companion skill?
+
+The rule and the skill are a pair. The rule (this repository) is always loaded and deterministic; it carries the trigger and a compact framework summary. The skill (authorship-strategy-skill) is triggered on demand and carries the deeper judgment reference — the full tactic catalog, the checklist, and the operating-over-time procedure. Install the rule for always-on framing; add the skill for full reasoning.
+
+## Related
+
+- Doctrine: https://github.com/shimo4228/authorship-strategy (DOI 10.5281/zenodo.20263316)
+- Companion skill: https://github.com/shimo4228/authorship-strategy-skill
+- Sibling research lines: agent-knowledge-cycle (10.5281/zenodo.19200726), contemplative-agent (10.5281/zenodo.19212118), agent-attribution-practice (10.5281/zenodo.19652013), attention-not-self (10.5281/zenodo.20262112)

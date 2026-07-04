@@ -1,0 +1,25 @@
+# authorship-strategy-rules
+
+> A single behavioral rules file (MIT) that installs the Authorship Strategy framework — a three-axis inversion (scarcity→diffusion, exclusivity→derivation, enclosure→openness) and a four-layer stack (authenticity → attribution diffusion → idea/scaffold separation → tactics) — into an AI agent's rules directory. It is the always-loaded install path: one rule loaded every session that applies the framework deterministically to your own DOI-registered idea-rescue research repositories, instead of the on-demand companion skill. Copy `rules/common/authorship-strategy.md` into your harness rules directory.
+
+## Core documentation
+
+- [llms-full.txt](llms-full.txt): self-contained Q&A reference for AI agents (Project Facts, question-form sections)
+- [README.md](README.md): human-facing narrative (install, framework summary, sync model)
+- [rules/common/authorship-strategy.md](rules/common/authorship-strategy.md): the rule file itself — trigger condition, four-layer framework summary, prohibited/encouraged actions (Japanese)
+
+## Architecture
+
+- Single rules file, no subagents — the always-loaded, deterministic counterpart to the probabilistically-triggered [authorship-strategy-skill](https://github.com/shimo4228/authorship-strategy-skill). Loaded every session.
+- Trigger: applies only to research repositories you own that are DOI-registered (or a Zenodo-archive target) and idea-rescue in character; silent outside that scope.
+- Four layers: Authenticity (floor — change how an idea travels, never what it is), Attribution diffusion (open the work so LLM absorption carries the origin claim), Idea vs. scaffold (keep the durable idea, donate the disposable implementation), Tactics (LLM-first metrics, DOI + SWHID, tool-agnostic, coin sparingly / anchor densely, citation-graph federation, friction minimization).
+- Sync model: canonical copy lives in the author's Claude Code harness (`~/.claude/rules/common/authorship-strategy.md`); this repo is a one-way mirror via `scripts/sync-from-local.sh`.
+- Design lineage: the rules-file install target for the [Authorship Strategy](https://github.com/shimo4228/authorship-strategy) doctrine ([DOI 10.5281/zenodo.20263316](https://doi.org/10.5281/zenodo.20263316)).
+
+## Sibling research lines
+
+- [authorship-strategy](https://github.com/shimo4228/authorship-strategy): the doctrine this rule belongs to ([DOI 10.5281/zenodo.20263316](https://doi.org/10.5281/zenodo.20263316))
+- [agent-knowledge-cycle](https://github.com/shimo4228/agent-knowledge-cycle): six-phase bidirectional growth loop ([DOI 10.5281/zenodo.19200726](https://doi.org/10.5281/zenodo.19200726))
+- [contemplative-agent](https://github.com/shimo4228/contemplative-agent): autonomous agents grounded in four contemplative axioms ([DOI 10.5281/zenodo.19212118](https://doi.org/10.5281/zenodo.19212118))
+- [agent-attribution-practice](https://github.com/shimo4228/agent-attribution-practice): harness-neutral ADRs on accountability distribution ([DOI 10.5281/zenodo.19652013](https://doi.org/10.5281/zenodo.19652013))
+- [attention-not-self](https://github.com/shimo4228/attention-not-self): Abhidharma × computational phenomenology ([DOI 10.5281/zenodo.20262112](https://doi.org/10.5281/zenodo.20262112))
