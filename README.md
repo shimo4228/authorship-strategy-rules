@@ -1,6 +1,6 @@
 # authorship-strategy-rules
 
-[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/shimo4228/authorship-strategy-rules) [![GitMCP](https://img.shields.io/endpoint?url=https://gitmcp.io/badge/shimo4228/authorship-strategy-rules)](https://gitmcp.io/shimo4228/authorship-strategy-rules)
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/shimo4228/authorship-strategy-rules)
 
 A single **behavioral rules file** that installs the [Authorship Strategy](https://github.com/shimo4228/authorship-strategy) judgment framework — the three-axis inversion (scarcity → diffusion, exclusivity → derivation, enclosure → openness) and the four-layer stack (authenticity → attribution diffusion → idea/scaffold separation → tactics) — into an AI agent's rules directory. Loaded every session, it applies the framework **deterministically** to your own DOI-registered idea-rescue research repositories.
 
