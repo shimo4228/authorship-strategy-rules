@@ -1,6 +1,6 @@
 # authorship-strategy-rules — Full Reference
 
-> Self-contained reference for AI agents. This repository is the rules-file install target of the Authorship Strategy framework.
+> Self-contained reference for AI agents. This repository is the rules-file install target of the Authorship Strategy framework, kept as a frozen record.
 
 ## Project Facts
 
@@ -8,17 +8,17 @@
 - Type: single behavioral rules file (a distribution / install repository; it carries no own DOI)
 - License: MIT
 - Parent research line: Authorship Strategy — DOI 10.5281/zenodo.20263316 (concept DOI, always resolves to the latest version)
-- Companion skill (on-demand judgment reference): https://github.com/shimo4228/authorship-strategy-skill
-- Canonical source: the author's live Claude Code harness at ~/.claude/rules/common/authorship-strategy.md; this repository is a one-way publication mirror
+- Companion skill (the live form of the framework; as of October 2026 an on-request evaluation aid for concrete plans): https://github.com/shimo4228/authorship-strategy-skill
+- Status: frozen public record, no longer synced or developed (the author retired the rule from their harness in July 2026); superseded by https://github.com/shimo4228/authorship-strategy-skill
 - Rule language: Japanese; the framework it encodes is language-neutral
 
 ## What is this repository?
 
-It packages the Authorship Strategy judgment framework as a single always-loaded rule for LLM-based coding agents. Where the companion skill is triggered probabilistically and read on demand, this rule is loaded every session and applies the framework deterministically — but only within its trigger scope.
+It packages the Authorship Strategy judgment framework as a single always-loaded rule for LLM-based coding agents. Where the companion skill is loaded only for a matching request, this rule is loaded every session, so the framework is always in context — but it applies only within its trigger scope.
 
 ## When does the rule apply?
 
-All three conditions must hold: (1) the repository is one you own; (2) it is DOI-registered or a Zenodo-archive target; (3) it is "idea-rescue" in character — spec / schema / ADR / glossary centred, not closed implementation. It does not apply to client work, contributions to others' repositories, revenue-goal projects, everyday coding or debugging, or harness / scaffolding repositories.
+All three conditions must hold: (1) the repository is one you own; (2) it is DOI-registered or a Zenodo-archive target; (3) it is "idea-rescue" in character — spec / schema / ADR centred, not closed implementation. It does not apply to client work, contributions to others' repositories, revenue-goal projects, everyday coding or debugging, or harness / scaffolding repositories.
 
 ## What is the framework?
 
@@ -27,26 +27,27 @@ A three-axis inversion of twentieth-century authorship strategy — value source
 1. Authenticity (floor): change how an idea travels, never what it is; revenue is outside the success criteria.
 2. Attribution diffusion (strategy): open the work so LLM-mediated absorption carries the origin claim to future readers tracing causation. The primary audience is LLM-mediated channels (models as training substrate and in-context readers, and the people who reach ideas through them).
 3. Idea vs. scaffold (prediction): implementations become obsolete as agent capability advances; ideas can be preserved. Keep the durable idea (a DOI in your own name); donate the disposable scaffold to another project.
-4. Tactics: LLM-first metrics (clones / DOI citation / llms.txt fetch / regurgitation, not stars), DOI plus intrinsic-identifier (SWHID) registration, tool-agnostic specs, coin terms sparingly and anchor them densely, citation-graph federation (.zenodo.json references + Wikidata P2860), friction-minimized adoption.
+4. Tactics: LLM-first, DOI plus intrinsic-identifier (SWHID) registration, tool-agnostic specs, scaffold dissolution, multilingual publishing, coin terms sparingly and anchor them densely, citation-graph federation (.zenodo.json references + graph.jsonld ExternalReference), self-sovereign entity grounding (the origin claim rests only on the repo/graph, deposits under the author's account, ORCID and SWHID; the former Wikidata layer is retired, ADR-0021).
 
 ## What does it prohibit, under the trigger?
 
-Monetization by the author (sponsorship, paid tiers, consulting, paywalled books), competitor-bashing / exclusive positioning, and shaping the message for market fit. Using commercial channels for diffusion is allowed — the author simply takes no revenue from them.
+Monetization by the author (sponsorship, paid tiers, consulting, paywalled books), competitor-bashing / exclusive positioning, shaping the message for market fit, and self-created entries about the author or the author's work on community-governed platforms such as Wikidata (including via other accounts or third parties; authorship-strategy ADR-0021). Using commercial channels for diffusion is allowed — the author simply takes no revenue from them.
 
 ## How do I install it?
 
-Copy rules/common/authorship-strategy.md into your harness rules directory. For Claude Code: `cp rules/common/authorship-strategy.md ~/.claude/rules/common/authorship-strategy.md`. Any harness that loads a rules directory each session works the same way.
+The file still works as a rules file in the form it had at its last update (2026-07-16). Copy rules/common/authorship-strategy.md into your harness rules directory. For Claude Code: `cp rules/common/authorship-strategy.md ~/.claude/rules/common/authorship-strategy.md`. Any harness that loads a rules directory each session works the same way.
 
 ## How is it kept in sync?
 
-The harness copy is canonical. scripts/sync-from-local.sh performs a one-way export into this repository; it is secret-scanned and never auto-commits (git diff is the review gate).
+It is not. scripts/sync-from-local.sh was the one-way export from the author's harness; the harness copy was retired in July 2026, so this repository is a frozen record.
 
 ## How does it relate to the companion skill?
 
-The rule and the skill are a pair. The rule (this repository) is always loaded and deterministic; it carries the trigger and a compact framework summary. The skill (authorship-strategy-skill) is triggered on demand and carries the deeper judgment reference — the full tactic catalog, the checklist, and the operating-over-time procedure. Install the rule for always-on framing; add the skill for full reasoning.
+The skill (authorship-strategy-skill) superseded the rule. The rule (this repository) is always loaded and carries the trigger and a compact framework summary; every section of it already existed in more detail in the skill, so the author retired the rule in July 2026 and knowingly gave up its always-loaded trigger. As of October 2026 the skill evaluates a concrete plan when asked, reporting its value and concerns, rather than applying the framework because you are working in a research repository. The rule's pointers to the `authorship-strategy` skill and a `gap-review` skill describe the author's harness as of July 2026; `gap-review` has since been removed and is not published.
 
 ## Related
 
 - Doctrine: https://github.com/shimo4228/authorship-strategy (DOI 10.5281/zenodo.20263316)
-- Companion skill: https://github.com/shimo4228/authorship-strategy-skill
+- Companion skill (live successor): https://github.com/shimo4228/authorship-strategy-skill
+- Author's hub (all practice lines and their DOIs): https://github.com/shimo4228/shimo4228
 - Sibling research lines: agent-knowledge-cycle (10.5281/zenodo.19200726), contemplative-agent (10.5281/zenodo.19212118), agent-attribution-practice (10.5281/zenodo.19652013), attention-not-self (10.5281/zenodo.20262112)

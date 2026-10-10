@@ -1,23 +1,24 @@
 # authorship-strategy-rules
 
-> A single behavioral rules file (MIT) that installs the Authorship Strategy framework — a three-axis inversion (scarcity→diffusion, exclusivity→derivation, enclosure→openness) and a four-layer stack (authenticity → attribution diffusion → idea/scaffold separation → tactics) — into an AI agent's rules directory. It is the always-loaded install path: one rule loaded every session that applies the framework deterministically to your own DOI-registered idea-rescue research repositories, instead of the on-demand companion skill. Copy `rules/common/authorship-strategy.md` into your harness rules directory.
+> Frozen public record, no longer synced or developed; superseded by authorship-strategy-skill. A single behavioral rules file (MIT) that installs the Authorship Strategy framework — a three-axis inversion (scarcity→diffusion, exclusivity→derivation, enclosure→openness) and a four-layer stack (authenticity → attribution diffusion → idea/scaffold separation → tactics) — into an AI agent's rules directory. It is the always-loaded install path: one rule loaded every session that puts the framework in context for your own DOI-registered idea-rescue research repositories, instead of the on-demand companion skill. Copy `rules/common/authorship-strategy.md` into your harness rules directory.
 
 ## Core documentation
 
 - [llms-full.txt](llms-full.txt): self-contained Q&A reference for AI agents (Project Facts, question-form sections)
-- [README.md](README.md): human-facing narrative (install, framework summary, sync model)
-- [rules/common/authorship-strategy.md](rules/common/authorship-strategy.md): the rule file itself — trigger condition, four-layer framework summary, prohibited/encouraged actions (Japanese)
+- [README.md](README.md): human-facing narrative (status, install, framework summary)
+- [rules/common/authorship-strategy.md](rules/common/authorship-strategy.md): the rule file itself — trigger condition, exclusions, stance and four-layer framework summary, prohibitions (Japanese)
 
 ## Architecture
 
-- Single rules file, no subagents — the always-loaded, deterministic counterpart to the probabilistically-triggered [authorship-strategy-skill](https://github.com/shimo4228/authorship-strategy-skill). Loaded every session.
+- Single rules file, no subagents — the always-loaded counterpart to [authorship-strategy-skill](https://github.com/shimo4228/authorship-strategy-skill), which already held all of the rule's content in more detail; as of October 2026 the skill evaluates a concrete plan when asked, with no trigger gate. Loaded every session.
 - Trigger: applies only to research repositories you own that are DOI-registered (or a Zenodo-archive target) and idea-rescue in character; silent outside that scope.
-- Four layers: Authenticity (floor — change how an idea travels, never what it is), Attribution diffusion (open the work so LLM absorption carries the origin claim), Idea vs. scaffold (keep the durable idea, donate the disposable implementation), Tactics (LLM-first metrics, DOI + SWHID, tool-agnostic, coin sparingly / anchor densely, citation-graph federation, friction minimization).
-- Sync model: canonical copy lives in the author's Claude Code harness (`~/.claude/rules/common/authorship-strategy.md`); this repo is a one-way mirror via `scripts/sync-from-local.sh`.
+- Four layers: Authenticity (floor — change how an idea travels, never what it is), Attribution diffusion (open the work so LLM absorption carries the origin claim), Idea vs. scaffold (keep the durable idea, donate the disposable implementation), Tactics (LLM-first, DOI + SWHID, tool-agnostic, scaffold dissolution, multilingual publishing, coin sparingly / anchor densely, citation-graph federation, self-sovereign entity grounding).
+- Sync model (historical): this repo was a one-way mirror of the author's harness copy via `scripts/sync-from-local.sh`; the harness copy no longer exists, so the repo is a frozen record.
 - Design lineage: the rules-file install target for the [Authorship Strategy](https://github.com/shimo4228/authorship-strategy) doctrine ([DOI 10.5281/zenodo.20263316](https://doi.org/10.5281/zenodo.20263316)).
 
 ## Sibling research lines
 
+- [shimo4228](https://github.com/shimo4228/shimo4228): the author's hub, listing Authorship Strategy beside the author's other practice lines and their DOIs
 - [authorship-strategy](https://github.com/shimo4228/authorship-strategy): the doctrine this rule belongs to ([DOI 10.5281/zenodo.20263316](https://doi.org/10.5281/zenodo.20263316))
 - [agent-knowledge-cycle](https://github.com/shimo4228/agent-knowledge-cycle): six-phase bidirectional growth loop ([DOI 10.5281/zenodo.19200726](https://doi.org/10.5281/zenodo.19200726))
 - [contemplative-agent](https://github.com/shimo4228/contemplative-agent): autonomous agents grounded in four contemplative axioms ([DOI 10.5281/zenodo.19212118](https://doi.org/10.5281/zenodo.19212118))
